@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qiulisao-vectordrift"
+version = "0.1.0"
+description = "计算嵌入向量的均值、协方差与近邻分布，比较两批数据之间的偏移量"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "qiulisao" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://qiulisao.github.io"
+Repository = "https://github.com/qiulisao/vectordrift"
+Issues = "https://github.com/qiulisao/vectordrift/issues"
+
+[project.scripts]
+vectordrift = "vectordrift:main"
+
+[tool.setuptools]
+py-modules = ["vectordrift"]
